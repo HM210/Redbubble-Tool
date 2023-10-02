@@ -1,4 +1,5 @@
-# function doGet() {
+# Redbubble Tool (Apps Script/Java Script)
+  function doGet() {
   let filter = `{subject:"You've Made A Sale"}`;
   let spreadsheet = SpreadsheetApp.openByUrl(getSheetUrl());
   let values = spreadsheet.getSheetByName('Order').getRange(2, 1, 1).getValues();
